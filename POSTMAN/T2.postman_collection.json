@@ -1,0 +1,359 @@
+{
+	"info": {
+		"_postman_id": "e0667035-e17a-4024-ac82-dbf2310a0294",
+		"name": "T2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38290583",
+		"_collection_link": "https://www.postman.com/technical-architect-34227892/workspace/dsw2-t3-moscolgonzales-julioalexander/collection/38290583-e0667035-e17a-4024-ac82-dbf2310a0294?action=share&source=collection_link&creator=38290583"
+	},
+	"item": [
+		{
+			"name": "CLIENTES",
+			"item": [
+				{
+					"name": "Registrar Cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombres\": \"Julio\",\r\n    \"apellidos\": \"Moscol\",\r\n    \"dni\": \"75117449\",\r\n    \"telefono\": \"984321367\",\r\n    \"correo\": \"julio@gmail.com\",\r\n    \"direccion\": \"mi peru, callao\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-base}}api/v1/cliente",
+							"host": [
+								"{{url-base}}api"
+							],
+							"path": [
+								"v1",
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listado Clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-base}}api/v1/cliente",
+							"host": [
+								"{{url-base}}api"
+							],
+							"path": [
+								"v1",
+								"cliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Cliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombres\": \"Julio Alexander\",\r\n    \"apellidos\": \"Moscol Gonzales\",\r\n    \"dni\": \"75117449\",\r\n    \"telefono\": \"984321367\",\r\n    \"correo\": \"alexanderjmgonzales@gmail.com\",\r\n    \"direccion\": \"mi peru, Callao, Peru\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-base}}api/v1/cliente/11",
+							"host": [
+								"{{url-base}}api"
+							],
+							"path": [
+								"v1",
+								"cliente",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Cliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url-base}}api/v1/cliente/11",
+							"host": [
+								"{{url-base}}api"
+							],
+							"path": [
+								"v1",
+								"cliente",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Cliente ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-base}}api/v1/cliente/11",
+							"host": [
+								"{{url-base}}api"
+							],
+							"path": [
+								"v1",
+								"cliente",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PROVEEDOR",
+			"item": [
+				{
+					"name": "Listado Proveedor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-base}}api/v1/proveedor",
+							"host": [
+								"{{url-base}}api"
+							],
+							"path": [
+								"v1",
+								"proveedor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Proveedor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"telefono\": \"984321367\",\r\n    \"direccion\": \"mi peru, callao, peru\",\r\n    \"empresa\": \"moscol gonzales s.a.c.\",\r\n    \"ruc\": \"20234567891\",\r\n    \"correo\": \"moscolgonzales@gmai.com\",\r\n    \"representante\": \"Julio Moscol Gonzales\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-base}}api/v1/proveedor",
+							"host": [
+								"{{url-base}}api"
+							],
+							"path": [
+								"v1",
+								"proveedor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Proveedor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"telefono\": \"984321367\",\r\n    \"direccion\": \"mi peru, callao, peru\",\r\n    \"empresa\": \"julio moscol gonzales s.a.c.\",\r\n    \"ruc\": \"20234567891\",\r\n    \"correo\": \"alexandermoscolgonzales@gmai.com\",\r\n    \"representante\": \"Julio Alexander Moscol Gonzales\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-base}}api/v1/proveedor/11",
+							"host": [
+								"{{url-base}}api"
+							],
+							"path": [
+								"v1",
+								"proveedor",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Proveedor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url-base}}api/v1/proveedor/11",
+							"host": [
+								"{{url-base}}api"
+							],
+							"path": [
+								"v1",
+								"proveedor",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Proveedor ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-base}}api/v1/proveedor/10",
+							"host": [
+								"{{url-base}}api"
+							],
+							"path": [
+								"v1",
+								"proveedor",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PRODUCTOS",
+			"item": [
+				{
+					"name": "Listado Producto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-base}}api/v1/producto",
+							"host": [
+								"{{url-base}}api"
+							],
+							"path": [
+								"v1",
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoProducto\": {\r\n        \"idtipopro\": 1\r\n    },\r\n    \"proveedor\": {\r\n        \"idproveedor\": 4\r\n    },\r\n    \"nombre\": \"CAT CHOW ADULTO ESTERILIZADO 15KG\",\r\n    \"cantidad\": 20,\r\n    \"preciopublico\": 186.40,\r\n    \"stockminimo\": 4,\r\n    \"stockmaximo\": 50,\r\n    \"estado\": {\r\n        \"codestado\": true\r\n    },\r\n    \"animal\": {\r\n        \"idanimal\": 1\r\n    },\r\n    \"precioproveedor\": 150.56\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-base}}api/v1/producto",
+							"host": [
+								"{{url-base}}api"
+							],
+							"path": [
+								"v1",
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Producto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoProducto\": {\r\n        \"idtipopro\": 1\r\n    },\r\n    \"proveedor\": {\r\n        \"idproveedor\": 4\r\n    },\r\n    \"nombre\": \"CAT CHOW ADULTO ESTERILIZADO 15KG\",\r\n    \"cantidad\": 20,\r\n    \"preciopublico\": 186.40,\r\n    \"stockminimo\": 4,\r\n    \"stockmaximo\": 50,\r\n    \"estado\": {\r\n        \"codestado\": true\r\n    },\r\n    \"animal\": {\r\n        \"idanimal\": 1\r\n    },\r\n    \"precioproveedor\": 150.56\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url-base}}api/v1/producto/10",
+							"host": [
+								"{{url-base}}api"
+							],
+							"path": [
+								"v1",
+								"producto",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Producto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url-base}}api/v1/producto/24",
+							"host": [
+								"{{url-base}}api"
+							],
+							"path": [
+								"v1",
+								"producto",
+								"24"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Producto ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url-base}}api/v1/producto/24",
+							"host": [
+								"{{url-base}}api"
+							],
+							"path": [
+								"v1",
+								"producto",
+								"24"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
